@@ -1,0 +1,245 @@
+body {
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+    width: inherit;
+    background: linear-gradient(90deg, #F35400, #FA8C00, #323232, #222121);
+}
+
+.main .containerSunLandscape,
+.main .containerMoonLandscape {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 840px;
+    height: 720px;
+}
+
+.main .containerSunLandscape {
+    border-radius: 16px 0 0 16px;
+    background: linear-gradient(45deg, #222121, #323232);
+}
+
+.main .containerSunLandscape .sunLandscape,
+.main .containerMoonLandscape .moonLandscape {
+    aspect-ratio: 1;
+    border-radius: 72px;
+    overflow: hidden;
+}
+
+.main .containerSunLandscape .sunLandscape {
+    width: 380px;
+    background-color: #F23D3D;
+}
+
+.main .containerSunLandscape .sunLandscape .sun,
+.main .containerSunLandscape .sunLandscape .mountains,
+.main .containerMoonLandscape .moonLandscape .moon,
+.main .containerMoonLandscape .moonLandscape .mountains {
+    position: relative;
+}
+
+.main .containerSunLandscape .sunLandscape .sun .circle {
+    position: absolute;
+    top: 100px;
+    right: 110px;
+    transform: translate(50%, -50%);
+    border-radius: 50%;
+    aspect-ratio: 1;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(242, 61, 61, 1);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(242, 61, 61, 1);
+    box-shadow: 0px 0px 5px 0px rgba(242, 61, 61, 1);
+}
+
+.main .containerSunLandscape .sunLandscape .sun .nivel1 {
+    width: 420px;
+    background-color: #f3503c;
+    z-index: 1;
+}
+
+.main .containerSunLandscape .sunLandscape .sun .nivel2 {
+    width: 330px;
+    background-color: #f56249;
+    z-index: 2;
+}
+
+.main .containerSunLandscape .sunLandscape .sun .nivel3 {
+    width: 240px;
+    background-color: #f77857;
+    z-index: 3;
+}
+
+.main .containerSunLandscape .sunLandscape .sun .nivel4 {
+    width: 180px;
+    background-color: #F89066;
+    z-index: 4;
+}
+
+.main .containerSunLandscape .sunLandscape .sun .nivel5 {
+    width: 120px;
+    background-color: #ffffff;
+    z-index: 5;
+}
+
+.main .containerSunLandscape .sunLandscape .mountains .triangle {
+    position: absolute;
+    aspect-ratio: 1;
+    -webkit-transform: rotate(40deg) skew(10deg, 5deg);
+    -moz-transform: rotate(40deg) skew(10deg, 5deg);
+    -ms-transform: rotate(40deg) skew(10deg, 5deg);
+    -o-transform: rotate(40deg) skew(10deg, 5deg);
+    transform: rotate(40deg) skew(10deg, 5deg);
+}
+
+.main .containerSunLandscape .sunLandscape .mountains .nivel1 {
+    top: 305px;
+    right: -115px;
+    width: 300px;
+    -webkit-box-shadow: 0px 10px 50px 5px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 10px 50px 5px rgba(0, 0, 0, 1);
+    box-shadow: 0px 10px 50px 5px rgba(0, 0, 0, 1);
+    background-color: #3D3D3D;
+    z-index: 8;
+}
+
+.main .containerSunLandscape .sunLandscape .mountains .nivel2 {
+    top: 200px;
+    left: -220px;
+    width: 400px;
+    -webkit-box-shadow: 100px 0px 30px 5px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 100px 0px 30px 5px rgba(0, 0, 0, 1);
+    box-shadow: 100px 0px 30px 5px rgba(0, 0, 0, 1);
+    background-color: #393939;
+    z-index: 7;
+}
+
+.main .containerSunLandscape .sunLandscape .mountains .nivel3 {
+    top: 210px;
+    left: 10px;
+    width: 300px;
+    background-color: #3B3B3B;
+    z-index: 6;
+}
+
+.main .containerMoonLandscape {
+    border-radius: 0 16px 16px 0;
+    background: linear-gradient(0deg, #F35400, #FA8C00);
+}
+
+.main .containerMoonLandscape .moonLandscape {
+    width: 360px;
+    border: 20px solid white;
+    background-color: #1B4159;
+}
+
+.main .containerMoonLandscape .moonLandscape .stars {
+    margin-top: 50px;
+}
+
+.main .containerMoonLandscape .moonLandscape .stars .nivel {
+    display: flex;
+}
+
+.main .containerMoonLandscape .moonLandscape .stars .nivel .circle {
+    width: 6px;
+    aspect-ratio: 1;
+    margin: 0 0 50px 50px;
+    border-radius: 50%;
+    background-color: white;
+    -webkit-box-shadow: 0px 0px 6px 0px rgba(255, 255, 255, 1);
+    -moz-box-shadow: 0px 0px 6px 0px rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 6px 0px rgba(255, 255, 255, 1);
+}
+
+.main .containerMoonLandscape .moonLandscape .moon .circle {
+    position: absolute;
+    top: -140px;
+    left: 250px;
+    transform: translate(-150%, 50%);
+    aspect-ratio: 1;
+    border-radius: 50%;
+}
+
+.main .containerMoonLandscape .moonLandscape .moon .nivel1 {
+    width: 80px;
+    background-color: white;
+    z-index: 1;
+}
+
+.main .containerMoonLandscape .moonLandscape .moon .nivel2 {
+    width: 60px;
+    background-color: #1B4159;
+    z-index: 1;
+}
+
+.main .containerMoonLandscape .moonLandscape .mountains .triangle {
+    position: absolute;
+    top: 135px;
+    right: 40px;
+    transform: translate(50%, -45%) rotate(45deg);
+    aspect-ratio: 1;
+    -webkit-box-shadow: 0px 0px .5px 0px rgba(27, 65, 89, 1);
+    -moz-box-shadow: 0px 0px .5px 0px rgba(27, 65, 89, 1);
+    box-shadow: 0px 0px .5px 0px rgba(27, 65, 89, 1);
+}
+
+.main .containerMoonLandscape .moonLandscape .mountains .nivel1 {
+    width: 500px;
+    z-index: 1;
+    border-radius: 64px 0 0 0;
+    background: linear-gradient(-45deg, #1b4159 60%, rgba(255, 255, 255, .2), rgba(246, 111, 0, .8), #F24405);
+}
+
+.main .containerMoonLandscape .moonLandscape .mountains .nivel2 {
+    width: 375px;
+    z-index: 2;
+    border-radius: 64px 0 0 0;
+    background: linear-gradient(-45deg, #1b4159 60%, rgba(255, 255, 255, .2), rgba(246, 111, 0, .6), rgba(246, 111, 0, .8), #F24405);
+}
+
+.main .containerMoonLandscape .moonLandscape .mountains .nivel3 {
+    width: 250px;
+    z-index: 3;
+    border-radius: 48px 0 0 0;
+    background: linear-gradient(-45deg, #1b4159 55%, rgba(255, 255, 255, .2), rgba(246, 111, 0, .6), rgba(246, 111, 0, .7), rgba(246, 111, 0, .8), #F24405);
+}
+
+.main .containerMoonLandscape .moonLandscape .mountains .nivel4 {
+    width: 125px;
+    z-index: 4;
+    border-radius: 48px 0 0 0;
+    background: linear-gradient(-45deg, #1b4159 30%, rgba(255, 255, 255, .15), rgba(246, 111, 0, .8), #F24405);
+}
+
+@media screen and (max-width: 990px) {
+    body {
+        background: linear-gradient(180deg, #F35400, #FA8C00, #323232, #222121);
+    }
+
+    .main {
+        flex-direction: column;
+        transform: scale(.85);
+    }
+
+    .main .containerSunLandscape,
+    .main .containerMoonLandscape {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .main .containerSunLandscape {
+        border-radius: 16px 16px 0 0;
+    }
+
+    .main .containerMoonLandscape {
+        border-radius: 0 0 16px 16px;
+    }
+}
